@@ -1,0 +1,5 @@
+*.o
+*.a
+follow
+test_path
+test_cpp_linkage
