@@ -22,7 +22,9 @@ between those and the motors:
 
 ## From waypoints to wheel speeds
 
-`path` gives you a turn rate. [`mob`](../mob) turns that into wheel commands.
+`path` gives you a turn rate.
+[`mob`](https://github.com/JonasAtelier/algo-kinematics/tree/stable/wheel-odometry)
+turns that into wheel commands.
 They share the same frames and nothing else — neither library needs the other.
 
 ```c
@@ -141,7 +143,8 @@ the left side, which is what `mob` wants.
 - No obstacle avoidance. It follows the line you gave it, through whatever is
   standing there.
 - No speed planning. You pass `v` in and it is used as given — no slowing for
-  corners, no acceleration limits. That is [`traj`](../traj)'s job.
+  corners, no acceleration limits. That is the job of
+  [`trajectory-profile`](../trajectory-profile) (planned).
 - No reversing. `v` is meant to be positive; pure pursuit steers a robot that is
   driving forwards.
 - No closed loops. The path is open, and it ends at the last waypoint. For a
