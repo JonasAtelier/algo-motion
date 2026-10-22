@@ -55,6 +55,10 @@ make check    # run the tests
 make run      # drive a rover round an S-bend
 ```
 
+To use it in your own project, copy `include/path.h` and `src/path.c`, link the
+CMake target `algo::path-pursuit`, or use this folder as an ESP-IDF component.
+See [Use one library](../README.md#use-one-library).
+
 ## Picking the lookahead
 
 The lookahead is the one number you have to tune. The tracker aims at the point
