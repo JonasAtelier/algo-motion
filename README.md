@@ -2,6 +2,15 @@
 
 Turn waypoints into a smooth path and steer a simulated rover along it in portable C99.
 
+**Contents** · [Choose a library](#choose-a-library) · [Try the example](#try-the-example) · [Add it to your project](#add-it-to-your-project)
+
+## Choose a library
+
+| Library | What it does | Example and API |
+| --- | --- | --- |
+| [path-pursuit](path-pursuit/) | Build a smooth path and track it using pure pursuit. | [follow](path-pursuit/examples/follow.c) · [API](path-pursuit/include/path.h) |
+| [trajectory-profile](trajectory-profile/) | Planned trapezoidal and S-curve speed profiles. | Planned |
+
 ## Try the example
 
 From this repository’s root, use Make and a C99 compiler. No robot hardware is needed.
@@ -11,13 +20,6 @@ make -C path-pursuit run
 ```
 
 Follow a rover through an S-bend. The example prints its position and distance from the path until the final waypoint is within its lookahead distance. [Example source](path-pursuit/examples/follow.c)
-
-## Choose a library
-
-| Library | What it does |
-| --- | --- |
-| [path-pursuit](path-pursuit/) | Build a smooth path and track it using pure pursuit. |
-| [trajectory-profile](trajectory-profile/) | Planned trapezoidal and S-curve speed profiles. |
 
 ## Add it to your project
 
@@ -46,3 +48,5 @@ target_link_libraries(app PRIVATE algo::path-pursuit)
 </details>
 
 Run `make check` from the repository root to test the libraries. [MIT license](LICENSE)
+
+[Browse the workshop catalog · Portable C libraries](https://github.com/JonasAtelier/jonas-atelier-libraries#portable-c-libraries)
