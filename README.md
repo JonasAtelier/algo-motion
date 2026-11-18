@@ -19,6 +19,8 @@ From this repository’s root, use Make and a C99 compiler. No robot hardware is
 make -C path-pursuit run
 ```
 
+![Six waypoints define an S-bend. The simulated rover follows the curve and stops tracking when the last waypoint is within its one-metre lookahead.](assets/rover-track.png)
+
 Follow a rover through an S-bend. The example prints its position and distance from the path until the final waypoint is within its lookahead distance. [Example source](path-pursuit/examples/follow.c)
 
 ## Add it to your project
