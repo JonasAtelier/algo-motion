@@ -3,7 +3,7 @@
 <p align="center">
   <img alt="platform: portable C99" src="https://img.shields.io/badge/platform-portable%20C99-70e1b2?style=flat-square&labelColor=0d2238">
   <img alt="language: C" src="https://img.shields.io/badge/language-C-70e1b2?style=flat-square&labelColor=0d2238">
-  <img alt="license: MIT" src="https://img.shields.io/badge/license-MIT-f2bd68?style=flat-square&labelColor=0d2238">
+  <img alt="license: GPL-3.0-only" src="https://img.shields.io/badge/license-GPL--3.0--only-f2bd68?style=flat-square&labelColor=0d2238">
 </p>
 
 Waypoints to a smooth path, and a tracker that follows it, in one C file.
@@ -160,4 +160,4 @@ the left side, which is what `mob` wants.
 
 ## License
 
-MIT. See [LICENSE](LICENSE).
+© 2026 JonasAtelier, GPL-3.0-only. See [LICENSE](LICENSE).
